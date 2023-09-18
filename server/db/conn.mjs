@@ -8,8 +8,7 @@ let conn;
 
 try {
   conn = await client.connect();
-  await client.db("admin").command({ ping: 1 });
-  console.log("Connected to MongoDB");
+  console.log(`Connected to MongoDB`);
 } catch (e) {
   console.error(e);
 }
